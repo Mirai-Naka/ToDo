@@ -13,6 +13,10 @@
                         <label for="title" class="control-label">タイトル</label>
                         <input class="form-control" name="title" type="text">
                     </div>
+                    <div class="form-group">
+                        <label for="due_date" class="control-label">期日</label>
+                        <input class="form-control" name="due_date" type="due_date">
+                    </div>
                     <button class="btn btn-primary" type="submit">登録</button>
                 </form>
             </div>

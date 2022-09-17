@@ -20,6 +20,10 @@
                         <input class="form-control" name="title" type="text" value="{{ $todo->title }}">
                     </div>
                     <hr>
+                     <div class="form-group">
+                         <label for="title" class="control-label">期日</label>
+                         <input class="form-control" name="due_date" type="due_date" value="{{ $todo->due_date }}">
+                         <br>
                     <button class="btn btn-primary" type="submit">更新</button>
                 </form>
             </div>

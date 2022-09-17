@@ -25,6 +25,7 @@ class TodoController extends Controller
     {
         $todo = new Todo();
         $todo->title = $request->input('title');
+        $todo->due_date = $request->input('due_date');
         $todo->save();
     
         return redirect('todos')->with('status', $todo->title . 'を登録しました!');

@@ -18,7 +18,7 @@
                         <tr>
                             <th>id</th>
                             <th>title</th>
-                            <th></th>
+                            <th>期日</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -28,6 +28,7 @@
                         <tr>
                             <td>{{ $todo->id }}</td>
                             <td>{{ $todo->title }}</td>
+                            <td>{{ $todo->due_date }}</td>
                             <td><a href="{{ url('todos/' . $todo->id) }}" class="btn btn-info">詳細</a></td>
                             <td><a href="{{ url('todos/' . $todo->id . '/edit') }}" class="btn btn-primary">編集</a></td>
                             <td>
